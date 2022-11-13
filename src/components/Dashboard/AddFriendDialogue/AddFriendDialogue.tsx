@@ -1,10 +1,11 @@
 import { Formik } from 'formik';
-import { FC } from 'react';
+import { FC, useRef } from 'react';
 import * as Yup from 'yup';
 
 import { sendFriendInvintation } from '../../../store/actions/friendsActions';
 import { InvitationData } from '../../../types';
 import { useAppDispatch } from '../../../utils/hooks/reduxHooks';
+import { useOnClickOutside } from '../../../utils/hooks/useOnClickOutside';
 import Button from '../../UI/Buttons/Button/Button';
 import Input from '../../UI/Input/Input';
 import {
@@ -21,11 +22,15 @@ interface AddFriendsDialogueProps {
 }
 
 const AddFriendsDialogue: FC<AddFriendsDialogueProps> = ({ onClose }) => {
+  const dispatch = useAppDispatch();
+
+  const dialogueRef = useRef<HTMLDivElement>(null);
+
+  useOnClickOutside(dialogueRef, () => onClose());
+
   const initialValues: InvitationData = {
     targetMailAddress: '',
   };
-
-  const dispatch = useAppDispatch();
 
   const validationSchema = Yup.object().shape({
     targetMailAddress: Yup.string().email('Invalid e-mail format').required('E-mail is required'),
@@ -39,7 +44,7 @@ const AddFriendsDialogue: FC<AddFriendsDialogueProps> = ({ onClose }) => {
 
   return (
     <AddFriendsDialogueWrapper>
-      <AddFriendsDialogueContent>
+      <AddFriendsDialogueContent ref={dialogueRef}>
         <AddFriendsDialogueHeader>Invite a friend</AddFriendsDialogueHeader>
         <Formik
           initialValues={initialValues}
