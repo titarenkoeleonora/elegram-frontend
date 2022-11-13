@@ -1,5 +1,5 @@
 import kitty from '../../../images/kitty.png';
-import { useAppSelector } from '../../../store/hooks';
+import { useAppSelector } from '../../../utils/hooks/reduxHooks';
 import WelcomeBanner from '../../UI/WelcomeBanner/WelcomeBanner';
 import Chat from './Chat/Chat';
 import { MessengerWrapper } from './Messenger.styles';

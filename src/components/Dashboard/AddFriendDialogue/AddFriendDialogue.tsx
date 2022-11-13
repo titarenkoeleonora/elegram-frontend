@@ -3,8 +3,8 @@ import { FC } from 'react';
 import * as Yup from 'yup';
 
 import { sendFriendInvintation } from '../../../store/actions/friendsActions';
-import { useAppDispatch } from '../../../store/hooks';
 import { InvitationData } from '../../../types';
+import { useAppDispatch } from '../../../utils/hooks/reduxHooks';
 import Button from '../../UI/Buttons/Button/Button';
 import Input from '../../UI/Input/Input';
 import {

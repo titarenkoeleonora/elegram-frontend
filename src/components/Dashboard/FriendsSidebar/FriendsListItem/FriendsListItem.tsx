@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import { setChosenChatDetails } from '../../../../store/actions/chatActions';
-import { useAppDispatch, useAppSelector } from '../../../../store/hooks';
 import { ChatType, Friend, OnlineUser } from '../../../../types';
+import { useAppDispatch, useAppSelector } from '../../../../utils/hooks/reduxHooks';
 import Avatar from '../../../UI/Avatar/Avatar';
 import {
   FriendsListItemWrapper,

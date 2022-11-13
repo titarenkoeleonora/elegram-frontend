@@ -1,5 +1,5 @@
-import { useAppSelector } from '../../../store/hooks';
 import { Friend, Invitation } from '../../../types';
+import { useAppSelector } from '../../../utils/hooks/reduxHooks';
 import FriendsListItem from './FriendsListItem/FriendsListItem';
 import {
   FriendsListWrapper,

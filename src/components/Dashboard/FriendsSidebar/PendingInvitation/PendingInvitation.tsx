@@ -6,8 +6,8 @@ import {
   acceptFriendInvitation,
   rejectFriendInvitation,
 } from '../../../../store/actions/friendsActions';
-import { useAppDispatch } from '../../../../store/hooks';
 import { Invitation } from '../../../../types';
+import { useAppDispatch } from '../../../../utils/hooks/reduxHooks';
 import Avatar from '../../../UI/Avatar/Avatar';
 import ButtonIcon from '../../../UI/Buttons/ButtonIcon/ButtonIcon';
 import {

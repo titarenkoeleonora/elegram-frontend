@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
 import { signUp } from '../../../store/actions/authActions';
-import { useAppDispatch } from '../../../store/hooks';
 import { SignUpData } from '../../../types';
+import { useAppDispatch } from '../../../utils/hooks/reduxHooks';
 import Button from '../../UI/Buttons/Button/Button';
 import Input from '../../UI/Input/Input';
 import { ButtonsContainer, FormContainer, RegistrationWrapper } from './Registration.styles';

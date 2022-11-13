@@ -2,10 +2,10 @@ import { useEffect, useRef } from 'react';
 
 import { getDirectChatHistory } from '../../../../api/socketConnection';
 import kittyWrite from '../../../../images/kitty-write.png';
-import { useAppSelector } from '../../../../store/hooks';
 import { MessageInterface } from '../../../../types';
 import { DATE_FORMAT } from '../../../../utils/constants';
 import { getIsToday, humanizeDate } from '../../../../utils/dateHelpers';
+import { useAppSelector } from '../../../../utils/hooks/reduxHooks';
 import DateSeparator from '../../../UI/DateSeparator/DateSeparator';
 import WelcomeBanner from '../../../UI/WelcomeBanner/WelcomeBanner';
 import { ChatWrapper, MessagesWrapper } from './Chat.styles';

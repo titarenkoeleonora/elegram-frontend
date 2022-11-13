@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
 import { logIn } from '../../../store/actions/authActions';
-import { useAppDispatch } from '../../../store/hooks';
 import { LogInData } from '../../../types';
+import { useAppDispatch } from '../../../utils/hooks/reduxHooks';
 import Button from '../../UI/Buttons/Button/Button';
 import Input from '../../UI/Input/Input';
 import { ButtonsContainer, FormContainer, LoginWrapper } from './Login.styles';

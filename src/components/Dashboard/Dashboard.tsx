@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 import { connectWithSocketServer } from '../../api/socketConnection';
 import { setUserDetails } from '../../store/actions/authActions';
-import { useAppDispatch } from '../../store/hooks';
 import { logout } from '../../utils/auth';
+import { useAppDispatch } from '../../utils/hooks/reduxHooks';
 import AddFriendsDialogue from './AddFriendDialogue/AddFriendDialogue';
 import { DashboardWrapper } from './Dashboard.styles';
 import FriendsSidebar from './FriendsSidebar/FriendsSidebar';
