@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.header(
     justify-content: space-between;
     width: 100%;
     height: 48px;
-    background-color: ${theme.darkTheme.backgroundColor};
+    background-color: ${theme.darkTheme.primaryBackgroundColor};
     border-bottom: 1px solid #333333;
   `,
 );

@@ -21,7 +21,7 @@ const FriendsSidebar = () => {
           <FriendsListItem key={user.id} user={user} />
         ))}
       </FriendsListWrapper>
-      {invintations && (
+      {invintations.length > 0 && (
         <>
           <FriendsSidebarTitle>Invitations</FriendsSidebarTitle>
           {invintations.map((invitation: Invitation) => (

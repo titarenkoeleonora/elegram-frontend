@@ -37,7 +37,8 @@ export const AddFriendsDialogueContent = styled.div(
   ({ theme }) => css`
     width: 500px;
     height: 250px;
-    background-color: ${theme.darkTheme.lightGrey};
+    background-color: ${theme.darkTheme.modalColor};
+    box-shadow: 0px 0px 27px 11px rgba(0, 0, 0, 0.58);
 
     @media screen and (max-width: ${theme.breakpoints.tablet}) {
       width: calc(100% - 40px);
@@ -50,7 +51,7 @@ export const AddFriendsDialogueHeader = styled.div(
     padding: 15px 20px;
     width: 100%;
     height: 50px;
-    background-color: ${theme.darkTheme.lightGrey};
+    background-color: ${theme.darkTheme.modalColor};
   `,
 );
 
@@ -59,7 +60,7 @@ export const AddFriendsDialogueBody = styled.div(
     padding: 15px 20px;
     width: 100%;
     height: 130px;
-    background-color: ${theme.darkTheme.lightGrey};
+    background-color: ${theme.darkTheme.modalColor};
 
     label {
       padding: 0;
@@ -76,6 +77,6 @@ export const AddFriendsDialogueFooter = styled.div(
     gap: 20px;
     width: 100%;
     height: auto;
-    background-color: ${theme.darkTheme.lightGrey};
+    background-color: ${theme.darkTheme.modalColor};
   `,
 );

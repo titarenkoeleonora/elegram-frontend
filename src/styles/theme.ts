@@ -5,12 +5,11 @@ export const theme = {
     desktop: '960px',
   },
   darkTheme: {
-    primaryTextColor: '#CDCDCD', // посмотреть нейминг переменных
-    backgroundColor: '#000000',
-    primaryColor: '#222222',
-    secondaryColor: '#333333',
-    darkGreyColor: '#0E0E0E',
-    lightGrey: '#2B2B2B',
+    primaryTextColor: '#CDCDCD',
+    primaryBackgroundColor: '#000000',
+    secondaryBackgroundColor: '#0E0E0E',
+    primaryButtonColor: '#222222',
+    modalColor: '#2B2B2B',
     successColor: '#6DB95A',
     errorColor: '#60100B',
     messageColor: '#343434',

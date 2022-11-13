@@ -11,7 +11,7 @@ interface FriendsListItemWrapperProps {
 }
 
 const activeButtonStyles = css`
-  background-color: ${({ theme }) => theme.darkTheme.lightGrey};
+  background-color: ${({ theme }) => theme.darkTheme.modalColor};
   border-radius: 15px;
 `;
 

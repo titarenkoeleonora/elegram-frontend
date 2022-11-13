@@ -9,11 +9,11 @@ interface ButtonProps {
 
 const primaryButtonStyles = css`
   background-color: ${({ theme }) => theme.darkTheme.primaryTextColor};
-  color: ${({ theme }) => theme.darkTheme.backgroundColor};
+  color: ${({ theme }) => theme.darkTheme.primaryBackgroundColor};
 `;
 
 const secondaryButtonStyles = css`
-  background-color: ${({ theme }) => theme.darkTheme.primaryColor};
+  background-color: ${({ theme }) => theme.darkTheme.primaryButtonColor};
   color: ${({ theme }) => theme.darkTheme.primaryTextColor};
 `;
 

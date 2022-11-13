@@ -9,7 +9,7 @@ export const FriendsSidebarWrapper = styled.div(
     align-items: center;
     width: 400px;
     height: calc(100vh - 48px);
-    background-color: ${theme.darkTheme.backgroundColor};
+    background-color: ${theme.darkTheme.primaryBackgroundColor};
 
     @media screen and (max-width: ${theme.breakpoints.tablet}) {
       width: 100vw;

@@ -17,7 +17,7 @@ export const InputComponent = styled(Field)(
     color: ${theme.darkTheme.primaryTextColor};
     font-size: 16px;
     font-weight: bold;
-    background-color: ${theme.darkTheme.primaryColor};
+    background-color: ${theme.darkTheme.primaryButtonColor};
     border: none;
     border-radius: 10px;
     caret-color: auto;
@@ -25,7 +25,7 @@ export const InputComponent = styled(Field)(
 
     &:hover,
     &:focus {
-      background-color: ${theme.darkTheme.secondaryColor};
+      background-color: ${theme.darkTheme.messageColor};
     }
   `,
 );
@@ -40,7 +40,6 @@ export const LabelComponent = styled.label(
 );
 
 export const InputContainer = styled.div`
-  /* margin-bottom: 20px; */
   width: 100%;
   display: flex;
   flex-direction: column;

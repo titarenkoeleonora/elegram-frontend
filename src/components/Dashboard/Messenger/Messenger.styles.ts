@@ -10,7 +10,7 @@ export const MessengerWrapper = styled.div<MessengerWrapperProps>(
   ({ theme, isChatActive }) => css`
     flex-grow: 1;
     height: calc(100vh - 48px);
-    background-color: ${theme.darkTheme.darkGreyColor};
+    background-color: ${theme.darkTheme.secondaryBackgroundColor};
 
     @media screen and (max-width: ${theme.breakpoints.tablet}) {
       position: fixed;

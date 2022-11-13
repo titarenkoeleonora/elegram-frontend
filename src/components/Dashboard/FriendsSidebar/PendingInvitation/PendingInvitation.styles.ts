@@ -27,7 +27,7 @@ export const UserAvatar = styled.div(
     align-items: center;
     justify-content: center;
     background-color: ${theme.darkTheme.primaryTextColor};
-    color: ${theme.darkTheme.backgroundColor};
+    color: ${theme.darkTheme.primaryBackgroundColor};
     font-size: 16px;
     border-radius: 50%;
   `,

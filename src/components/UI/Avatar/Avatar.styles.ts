@@ -12,7 +12,7 @@ export const AvatarWrapper = styled.p(
     justify-content: center;
     flex-shrink: 0;
     background-color: ${theme.darkTheme.primaryTextColor};
-    color: ${theme.darkTheme.backgroundColor};
+    color: ${theme.darkTheme.primaryBackgroundColor};
     font-size: 16px;
     border-radius: 50%;
     font-weight: bold;

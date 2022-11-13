@@ -22,7 +22,7 @@ export const DateLabel = styled.span(
     font-weight: bold;
     letter-spacing: 0.15em;
     font-size: 14px;
-    background-color: ${theme.darkTheme.darkGreyColor};
+    background-color: ${theme.darkTheme.secondaryBackgroundColor};
     text-transform: uppercase;
   `,
 );

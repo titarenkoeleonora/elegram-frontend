@@ -28,7 +28,7 @@ const primaryButtonStyles = css`
 `;
 
 const secondaryButtonStyles = css`
-  background-color: ${({ theme }) => theme.darkTheme.primaryColor};
+  background-color: ${({ theme }) => theme.darkTheme.primaryButtonColor};
 `;
 
 const acceptButtonStyles = css`

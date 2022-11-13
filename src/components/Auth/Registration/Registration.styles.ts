@@ -11,7 +11,7 @@ export const RegistrationWrapper = styled.div(
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: ${theme.darkTheme.backgroundColor};
+    background-color: ${theme.darkTheme.primaryBackgroundColor};
   `,
 );
 
