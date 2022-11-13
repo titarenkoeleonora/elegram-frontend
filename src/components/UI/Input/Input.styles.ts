@@ -48,6 +48,7 @@ export const InputContainer = styled.div`
 
 export const ErrorText = styled.p(
   ({ theme }) => css`
+    margin-bottom: 0;
     color: ${theme.darkTheme.errorColor};
 
     ${labelStyles}
