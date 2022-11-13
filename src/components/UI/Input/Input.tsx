@@ -6,18 +6,18 @@ import { ErrorText, InputComponent, InputContainer, LabelComponent } from './Inp
 interface InputProps extends HTMLAttributes<HTMLInputElement> {
   label?: string;
   name: string;
-  defaultValue: string;
   type?: string;
+  value?: string | number;
 }
 
-const Input: FC<InputProps> = ({ label, name, defaultValue, onChange, placeholder = '', type }) => (
+const Input: FC<InputProps> = ({ label, name, value, onChange, placeholder = '', type }) => (
   <InputContainer>
     {label && <LabelComponent>{label}</LabelComponent>}
 
     <InputComponent
       name={name}
       type={type ? type : 'text'}
-      value={defaultValue}
+      value={value}
       onChange={onChange}
       placeholder={placeholder}
       autoComplete="off"

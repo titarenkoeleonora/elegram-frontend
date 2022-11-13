@@ -58,7 +58,7 @@ const AddFriendsDialogue: FC<AddFriendsDialogueProps> = ({ onClose }) => {
                       id="targetMailAddress"
                       name="targetMailAddress"
                       onChange={handleChange}
-                      defaultValue={values.targetMailAddress}
+                      value={values.targetMailAddress}
                     />
                   </AddFriendsDialogueBody>
                   <AddFriendsDialogueFooter>

@@ -45,7 +45,7 @@ const RegistrationPage = () => {
               name="mail"
               type="email"
               onChange={handleChange}
-              defaultValue={values.mail}
+              value={values.mail}
             />
             <Input
               label="Password"
@@ -53,20 +53,20 @@ const RegistrationPage = () => {
               name="password"
               type="password"
               onChange={handleChange}
-              defaultValue={values.password}
+              value={values.password}
             />
             <Input
               label="Username"
               id="username"
               name="username"
               onChange={handleChange}
-              defaultValue={values.username}
+              value={values.username}
             />
             <ButtonsContainer>
               <Button type="button" secondary onClick={onLoginCLick}>
                 Log in
               </Button>
-              <Button primary type="submit" disabled={!isValid && dirty}>
+              <Button primary type="submit" disabled={!isValid || !dirty}>
                 Sign up
               </Button>
             </ButtonsContainer>

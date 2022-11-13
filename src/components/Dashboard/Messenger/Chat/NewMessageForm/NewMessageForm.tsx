@@ -81,7 +81,7 @@ const NewMessageForm = () => {
               name="message"
               onChange={handleChange}
               placeholder={`Write a message...`}
-              defaultValue={values.message}
+              value={values.message}
             />
             <ButtonIcon icon={SendIcon} alt="Send" type="submit" />
           </FormWrapper>

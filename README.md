@@ -7,7 +7,25 @@
 
 ### 🏠 [Homepage](https://github.com/titarenkoeleonora/elegram-frontend)
 
-### ✨ [Demo](https://github.com/titarenkoeleonora/elegram-frontend)
+### ✨ [Demo](https://elegram-frontend.vercel.app)
+
+## What's done
+
+- [x] The app should allow users to log in and register (you can use fake mail for it)
+- [x] The app should allow users to add new friends and accept/reject received invitations
+- [x] The app should allow users to send messages to friends from the list
+
+As a bonus :
+
+- [x] Style-components to separate business logic from rendering logic
+- [x] App deployed to Vercel
+- [x] ESlint and prettier for automatic code formatting and matching it to best practices and code style
+- [x] Responsive layout
+
+Plans to do :
+
+- [x] Add app testing with Jest and react-testing-library
+- [x] Expand the functionality (notifications when the chat is closed, video calls, and so on)
 
 ## Install
 
@@ -33,6 +51,7 @@ npm run test
 
 * Github: [@titarenkoeleonora](https://github.com/titarenkoeleonora)
 * LinkedIn: [@eleonora-titarenko](https://linkedin.com/in/eleonora-titarenko)
+
 
 ## Show your support
 

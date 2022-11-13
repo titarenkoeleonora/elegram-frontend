@@ -7,7 +7,7 @@ import { LogInData } from '../../../types';
 import { useAppDispatch } from '../../../utils/hooks/reduxHooks';
 import Button from '../../UI/Buttons/Button/Button';
 import Input from '../../UI/Input/Input';
-import { ButtonsContainer, FormContainer, LoginWrapper } from './Login.styles';
+import { ButtonsContainer, FormContainer } from './Login.styles';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -29,42 +29,42 @@ const LoginPage = () => {
   const onSubmit = (values: LogInData) => dispatch(logIn(values, navigate));
 
   return (
-    <LoginWrapper>
-      <Formik
-        initialValues={initialValues}
-        validationSchema={loginValidationSchema}
-        onSubmit={onSubmit}
-      >
-        {({ values, handleChange, isValid, dirty }) => (
-          <FormContainer>
-            <Input
-              label="E-mail"
-              id="mail"
-              name="mail"
-              type="email"
-              onChange={handleChange}
-              defaultValue={values.mail}
-            />
-            <Input
-              label="Password"
-              id="password"
-              name="password"
-              type="password"
-              onChange={handleChange}
-              defaultValue={values.password}
-            />
-            <ButtonsContainer>
-              <Button type="button" secondary onClick={onSignUpCLick}>
-                Sign up
-              </Button>
-              <Button primary type="submit" disabled={!isValid && dirty}>
-                Log in
-              </Button>
-            </ButtonsContainer>
-          </FormContainer>
-        )}
-      </Formik>
-    </LoginWrapper>
+    // <LoginWrapper>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={loginValidationSchema}
+      onSubmit={onSubmit}
+    >
+      {({ values, handleChange, isValid, dirty }) => (
+        <FormContainer>
+          <Input
+            label="E-mail"
+            id="mail"
+            name="mail"
+            type="email"
+            onChange={handleChange}
+            value={values.mail}
+          />
+          <Input
+            label="Password"
+            id="password"
+            name="password"
+            type="password"
+            onChange={handleChange}
+            value={values.password}
+          />
+          <ButtonsContainer>
+            <Button type="button" secondary onClick={onSignUpCLick}>
+              Sign up
+            </Button>
+            <Button primary type="submit" disabled={!isValid || !dirty}>
+              Log in
+            </Button>
+          </ButtonsContainer>
+        </FormContainer>
+      )}
+    </Formik>
+    // </LoginWrapper>
   );
 };
 
