@@ -33,6 +33,7 @@ export const InputComponent = styled(Field)(
 export const LabelComponent = styled.label(
   ({ theme }) => css`
     margin-bottom: 10px;
+    line-height: 16px;
     color: ${theme.darkTheme.primaryTextColor};
 
     ${labelStyles}

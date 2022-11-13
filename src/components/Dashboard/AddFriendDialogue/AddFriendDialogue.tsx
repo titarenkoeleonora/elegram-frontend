@@ -69,7 +69,7 @@ const AddFriendsDialogue: FC<AddFriendsDialogueProps> = ({ onClose }) => {
                 <Button secondary onClick={onClose}>
                   Close
                 </Button>
-                <Button primary type="submit" disabled={!isValid && dirty}>
+                <Button primary type="submit" disabled={!isValid || !dirty}>
                   Invite
                 </Button>
               </AddFriendsDialogueFooter>
