@@ -9,6 +9,8 @@
 
 ### ✨ [Demo](https://elegram-frontend.vercel.app) P.S. Heroku server starts 1-2 minutes
 
+### [Backend](https://github.com/titarenkoeleonora/elegram-backend)
+
 ## What's done
 
 - [x] The app should allow users to log in and register (you can use fake mail for it)
