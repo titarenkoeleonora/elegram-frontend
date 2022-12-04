@@ -21,6 +21,7 @@ export const FriendsListItemWrapper = styled.li<FriendsListItemWrapperProps>(
     display: flex;
     align-items: center;
     list-style: none;
+    cursor: pointer;
 
     &:hover {
       ${activeButtonStyles}

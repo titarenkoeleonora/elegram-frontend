@@ -18,6 +18,7 @@ export const TextWrapper = styled.div<TextWrapperProps>(
     display: flex;
     width: fit-content;
     min-width: 40px;
+    max-width: 700px;
     border-radius: 5px;
     background-color: ${theme.darkTheme.messageColor};
     color: ${theme.darkTheme.primaryTextColor};
