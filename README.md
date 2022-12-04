@@ -7,7 +7,9 @@
 
 ### 🏠 [Homepage](https://github.com/titarenkoeleonora/elegram-frontend)
 
-### ✨ [Demo](https://elegram-frontend.vercel.app)
+### ✨ [Demo](https://elegram-frontend.vercel.app) P.S. Heroku server starts 1-2 minutes
+
+### [Backend](https://github.com/titarenkoeleonora/elegram-backend)
 
 ## What's done
 
